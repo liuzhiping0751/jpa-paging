@@ -1,7 +1,7 @@
 # jpa-paging
 springBoot jpa Bootstarp分页器 layui分页
 
-后台使用springBoot前端写了几个简单的分页，分别使用了bootstrap-paging 和layui分页，数据表格分页。。
+后台使用springBoot，前端写了几个简单的分页，分别使用了bootstrap-paging 和layui分页、数据表格分页。。
 ----
 
 控制器代码⬇⬇⬇⬇⬇
@@ -139,3 +139,55 @@ layui 分页工具分页
 layui表格分页
 ![layuipaging](https://github.com/liuzhiping0751/jpa-paging/raw/master/project-description-image/layui_table_paging.jpg)
 
+数据库数据
+----
+```Sql
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : mysql
+ Source Server Type    : MySQL
+ Source Server Version : 80016
+ Source Host           : localhost:3306
+ Source Schema         : tk_test
+
+ Target Server Type    : MySQL
+ Target Server Version : 80016
+ File Encoding         : 65001
+
+ Date: 09/01/2020 16:06:24
+*/
+
+SET NAMES utf8mb4;
+SET FOREIGN_KEY_CHECKS = 0;
+
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user`  (
+  `id` int(13) NOT NULL AUTO_INCREMENT COMMENT '主键',
+  `name` varchar(33) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL COMMENT '姓名',
+  `age` int(3) NULL DEFAULT NULL COMMENT '年龄',
+  `money` double NULL DEFAULT NULL COMMENT '账户余额',
+  PRIMARY KEY (`id`) USING BTREE
+) ENGINE = InnoDB AUTO_INCREMENT = 14 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+INSERT INTO `user` VALUES (1, '老王', 15, 5000);
+INSERT INTO `user` VALUES (2, '小李子', 50, 2000);
+INSERT INTO `user` VALUES (3, '山大王', 50, 2000);
+INSERT INTO `user` VALUES (5, '角度讲呢', 50, 2000);
+INSERT INTO `user` VALUES (6, '王大锤', 10, 2000);
+INSERT INTO `user` VALUES (7, '铁锤s', 20, 3000);
+INSERT INTO `user` VALUES (8, 'dsf', 20, 6000);
+INSERT INTO `user` VALUES (9, 'lmv', 32, 7000);
+INSERT INTO `user` VALUES (10, 'iebnf', 12, 500);
+INSERT INTO `user` VALUES (11, 'fsdf', 50, 9000);
+INSERT INTO `user` VALUES (12, 'jkjf', 20, 4000);
+INSERT INTO `user` VALUES (13, 'lbk', 19, 3000);
+
+SET FOREIGN_KEY_CHECKS = 1;
+```
