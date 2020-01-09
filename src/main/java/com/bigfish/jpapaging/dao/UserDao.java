@@ -14,7 +14,4 @@ public interface UserDao extends JpaRepository<UserBean,Integer> {
      */
     UserBean findByUserName(String userName);
 
-
-
-
 }
