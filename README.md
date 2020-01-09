@@ -132,4 +132,8 @@ public class PageUtil<T> {
 
 简单的页面样子
 ----
-![baidu](https://github.com/liuzhiping0751/jpa-paging/tree/master/project-description-image/bootstrap-paging.png "")
+
+![Bootstrap-paging](https://github.com/liuzhiping0751/jpa-paging/raw/master/project-description-image/bootstrap-paging.png)
+
+![Bootstrap-paging](https://github.com/liuzhiping0751/jpa-paging/raw/master/project-description-image/layui-paging.png)
+
