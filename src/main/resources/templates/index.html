@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!----------- All CSS ---------->
+    <!--<link type="text/css" rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css" />-->
+    <link type="text/css" rel="stylesheet" href="webjars/bootstrap-paginator/1.0.2/css/bootstrapv3.css"/>
+    <link type="text/css" rel="stylesheet" href="webjars/bootstrap-paginator/1.0.2/css/qunit-1.11.0.css" />
+
+    <!----------- All JS ---------->
+    <script type="text/javascript" src="webjars/bootstrap-paginator/1.0.2/lib/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="webjars/bootstrap-paginator/1.0.2/lib/bootstrapv3.js"></script>
+    <script type="text/javascript" src="webjars/vue/2.6.11/dist/vue.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="row" style="height: 336px;">
+        <div id="vue_det">
+        <table class="table table-hover" >
+            <thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>余额</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="list in listData">
+                <td>{{ list.userName }}</td>
+                <td>{{ list.userAge }}</td>
+                <td>{{ list.userMoney }}</td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+    </div>
+    <div class="row">
+        <div class="col-md-5">
+            <ul id='bp-3-element-test'></ul>
+        </div>
+        <div class="col-md-2">
+            <div class="input-group" style="margin: 20px auto;width: 76px;">
+            <span class="input-group-addon" title="Go to page">
+                <i class="glyphicon glyphicon-arrow-right"></i>
+            </span>
+                <input id="goto_page_demo_pag1" type="text" class="form-control small-input" title="Go to page">
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<script type="text/javascript" src="webjars/bootstrap-paginator/1.0.2/build/bootstrap-paginator.min.js"></script>
+<script type="text/javascript" src="webjars/bootstrap-paginator/1.0.2/lib/qunit-1.11.0.js"></script>
+<script type="text/javascript" src="/js/fenye.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $.startInit(1, 4, "/user/queryUser");
+    });
+</script>
+</body>
+</html>
