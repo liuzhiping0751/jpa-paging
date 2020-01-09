@@ -133,7 +133,7 @@ public class PageUtil<T> {
 简单的页面样子
 ----
 
-![Bootstrap-paging](https://github.com/liuzhiping0751/jpa-paging/raw/master/project-description-image/bootstrap-paging.png)
+![Bootstrappaging](https://github.com/liuzhiping0751/jpa-paging/raw/master/project-description-image/bootstrap-paging.png)
 
-![Bootstrap-paging](https://github.com/liuzhiping0751/jpa-paging/raw/master/project-description-image/layui-paging.png)
+![layuipaging](https://github.com/liuzhiping0751/jpa-paging/raw/master/project-description-image/layui-paging.png)
 
